@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKS Reinigung | Professionelle Reinigungsdienstleistungen in Berlin</title>
+    <meta name="description" content="HKS Reinigung - Ihr professioneller Reinigungsservice in Berlin für Wohnungen, Büros, Praxen und mehr. Zuverlässig, gründlich und preiswert.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary: #005b9f;
+            --primary-dark: #003d66;
+            --secondary: #ffffff;
+            --accent: #ff7f00;
+            --light: #f8f9fa;
+        }
+        .bg-primary { background-color: var(--primary); }
+        .bg-primary-dark { background-color: var(--primary-dark); }
+        .bg-secondary { background-color: var(--secondary); }
+        .bg-accent { background-color: var(--accent); }
+        .bg-light { background-color: var(--light); }
+        .text-primary { color: var(--primary); }
+        .text-primary-dark { color: var(--primary-dark); }
+        .text-secondary { color: var(--secondary); }
+        .text-accent { color: var(--accent); }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 scroll-smooth">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="d:\\1Ai\\HKS\\Screenshots\\Logo.png" alt="HKS Logo" class="h-10 w-auto mr-3" style="max-height: 40px;">
+                    <img src="d:\\1Ai\\HKS\\Screenshots\\Logotext.png" alt="HKS Reinigung" class="h-8 w-auto mr-3" style="max-height: 30px;">
+                    <img src="d:\\1Ai\\HKS\\Screenshots\\Slogan.png" alt="Slogan" class="h-6 w-auto" style="max-height: 25px;">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary">Leistungen</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary">Über uns</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary">Kontakt</a>
+                    <a href="#booking" class="bg-accent hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Jetzt buchen</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-28 relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-6 animate-fade-in">HKS Reinigungsservice Berlin</h1>
+            <p class="text-xl mb-4 max-w-3xl mx-auto">Professionelle Reinigung für Wohnungen, Büros, Praxen und Gewerberäume</p>
+            <p class="text-2xl mb-10 font-medium">Wir reinigen, Sie entspannen</p>
+            <a href="#booking" class="bg-accent hover:bg-orange-500 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg">Jetzt buchen</a>
+        </div>
+    </section>
+
+    <!-- Why HKS Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-10">Warum HKS Reinigung?</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <div class="text-center p-6 pt-4 why-hks-item bg-primary-dark rounded-xl relative">
+                    <div class="text-white text-5xl mb-4"><i class="fas fa-coins"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Günstige Preise</h3>
+                    <p class="text-gray-200">Mit unseren günstigen Preisen bieten wir Ihnen qualitativ hochwertige Reinigungsdienste zu einem bezahlbaren Preis. Unsere kostenlose Erstbesichtigung hilft uns, ein auf Sie zugeschnittenes Angebot zu erstellen.</p>
+                    <div class="mt-4 text-white flex justify-center">
+                        <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-6 pt-4 why-hks-item bg-primary-dark rounded-xl relative">
+                    <div class="text-white text-5xl mb-4"><i class="fas fa-broom"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Professionelle Reinigungskräfte</h3>
+                    <p class="text-gray-200">Unsere Reinigungskräfte sind professionell ausgebildet und erfahren in allen Aspekten der Reinigung, um die höchste Qualität zu gewährleisten.</p>
+                    <div class="mt-4 text-white flex justify-center">
+                        <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-6 pt-4 why-hks-item bg-primary-dark rounded-xl relative">
+                    <div class="text-white text-5xl mb-4"><i class="fas fa-clock"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Pünktlichkeit & Zuverlässigkeit</h3>
+                    <p class="text-gray-200">Wir legen großen Wert auf Pünktlichkeit und Zuverlässigkeit, halten alle Termine ein und garantieren eine zuverlässige Reinigungsleistung.</p>
+                    <div class="mt-4 text-white flex justify-center">
+                        <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 md:w-3/4 md:mx-auto">
+                <div class="text-center p-6 pt-4 why-hks-item bg-primary-dark rounded-xl relative">
+                    <div class="text-white text-5xl mb-4"><i class="fas fa-calendar-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Flexible Terminplanung</h3>
+                    <p class="text-gray-200">Wir bieten flexible Terminplanung an, um die Reinigungsdienste zu einer für Sie passenden Zeit durchzuführen, sei es morgens, nachmittags, abends oder am Wochenende.</p>
+                    <div class="mt-4 text-white flex justify-center">
+                        <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-6 pt-4 why-hks-item bg-primary-dark rounded-xl relative">
+                    <div class="text-white text-5xl mb-4"><i class="fas fa-pump-soap"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Hochwertige Reinigungsmittel</h3>
+                    <p class="text-gray-200">Wir verwenden nur geprüfte, umweltfreundliche Reinigungsmittel für beste Ergebnisse und Ihre Gesundheit.</p>
+                    <div class="mt-4 text-white flex justify-center">
+                        <div class="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Die nächsten Schritte</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center p-8 next-step-container">
+                    <div class="next-step-number rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Anfrage</h3>
+                    <p class="text-gray-600">Füllen Sie kostenlos und unverbindlich das Anfrageformular aus.</p>
+                    <div class="mt-4 text-5xl text-primary">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                </div>
+                <div class="text-center p-8 next-step-container">
+                    <div class="next-step-number rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Kostenlose Besichtigung</h3>
+                    <p class="text-gray-600">Wir melden uns umgehend bei Ihnen zurück und vereinbaren den ersten kostenlosen Besichtigungstermin.</p>
+                    <div class="mt-4 text-5xl text-primary">
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+                <div class="text-center p-8 next-step-container">
+                    <div class="next-step-number rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Angebot</h3>
+                    <p class="text-gray-600">Nach der Besichtigung erhalten Sie von uns ein Angebot mit einem Leistungsverzeichnis, das Ihre Wünsche und Vorstellungen mit berücksichtigt.</p>
+                    <div class="mt-4 text-5xl text-primary">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                </div>
+                <div class="text-center p-8 next-step-container">
+                    <div class="next-step-number rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Wir legen los!</h3>
+                    <p class="text-gray-600">Schnell und unkompliziert beginnen wir mit der reibungslosen Reinigung Ihres Objektes!</p>
+                    <div class="mt-4 text-5xl text-primary">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Reinigungsservice buchen</h2>
+            <form action="https://formsubmit.co/dreamyvalo@gmail.com" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg booking-form">
+                <input type="hidden" name="_subject" value="Neue Reinigungsanfrage">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="service-type">Art der Reinigung</label>
+                    <select id="service-type" name="service-type" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        <option value="" disabled selected>Bitte auswählen</option>
+                        <option value="apartment">Wohnungsreinigung</option>
+                        <option value="office">Büroreinigung</option>
+                        <option value="club">Clubreinigung</option>
+                        <option value="other">Andere</option>
+                    </select>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="rooms">Anzahl Zimmer</label>
+                        <input type="number" id="rooms" name="rooms" min="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="area">Fläche in m²</label>
+                        <input type="number" id="area" name="area" min="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="frequency">Häufigkeit</label>
+                    <select id="frequency" name="frequency" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        <option value="once">Einmalig</option>
+                        <option value="weekly">Wöchentlich</option>
+                        <option value="biweekly">Zweiwöchentlich</option>
+                        <option value="monthly">Monatlich</option>
+                    </select>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="date">Gewünschtes Datum</label>
+                        <input type="text" id="date" name="date" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary flatpickr" placeholder="Datum auswählen" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="time">Gewünschte Uhrzeit</label>
+                        <input type="text" id="time" name="time" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary flatpickr" data-enable-time="true" data-no-calendar="true" data-date-format="H:i" placeholder="Uhrzeit auswählen" required>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="flex items-center">
+                        <input type="checkbox" name="flexible" class="rounded text-primary focus:ring-primary">
+                        <span class="ml-2 text-gray-700">Ich bin flexibel bei der Uhrzeit</span>
+                    </label>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="email">E-Mail Adresse</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                </div>
+
+                <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-4 rounded-lg transition duration-300">Angebot anfordern</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Unsere Leistungen</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg service-card text-center">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Wohnungsreinigung" class="w-full h-48 object-cover mb-4 rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Wohnungsreinigung</h3>
+                    <p class="text-gray-600">Endreinigung, Grundreinigung, Unterhaltsreinigung für Wohnungen und Häuser in ganz Berlin.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg service-card text-center">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Büroreinigung" class="w-full h-48 object-cover mb-4 rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Büroreinigung</h3>
+                    <p class="text-gray-600">Tägliche oder wöchentliche Reinigung für Büros, Praxen und Gewerberäume aller Art.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg service-card text-center">
+                    <div class="service-icon"><i class="fas fa-store"></i></div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Gewerbereinigung" class="w-full h-48 object-cover mb-4 rounded-lg mx-auto">
+                    <h3 class="text-xl font-bold mb-3 text-primary-dark">Gewerbereinigung</h3>
+                    <p class="text-gray-600">Umfassende Reinigungslösungen für Einzelhandel, Gastronomie und Dienstleister.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Was unsere Kunden sagen</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-primary-dark p-8 rounded-lg testimonial">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4 text-lg">"Die beste Reinigung in Berlin! Immer pünktlich und gründlich. Kann ich nur jedem empfehlen!"</p>
+                    <p class="font-bold">- Anna M., Prenzlauer Berg</p>
+                </div>
+                <div class="bg-primary-dark p-8 rounded-lg testimonial">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic mb-4 text-lg">"Seit Jahren zufriedener Kunde. Unser Büro glänzt immer und das Team ist stets freundlich und professionell."</p>
+                    <p class="font-bold">- Thomas K., Mitte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Über uns</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Professional Cleaning Team" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="text-gray-600 space-y-4">
+                    <p>Seit unserer Gründung im Jahr 2021 haben wir uns der Mission verschrieben, unserem Kunden erstklassige Dienstleistungen zu bieten und sie langfristig glücklich zu machen.</p>
+                    
+                    <p>Obwohl unser Unternehmen noch jung ist, bringen unsere Mitarbeiter jahrelange Erfahrung in der Branche mit. Diese Kombination aus frischem Unternehmergeist und fundiertem Fachwissen ermöglicht es uns, stets die besten Lösungen für unsere Kunden zu finden.</p>
+                    
+                    <p>Unser Team besteht aus engagierten und qualifizierten Fachkräften, die ihr Handwerk verstehen und mit Leidenschaft bei der Sache sind. Wir legen großen Wert auf Qualität, Zuverlässigkeit und individuelle Kundenbetreuung. Jeder Auftrag, den wir übernehmen, wird mit größter Sorgfalt und Professionalität ausgeführt.</p>
+                    
+                    <p>Unser Ziel ist es, langfristige Beziehungen zu unseren Kunden aufzubauen und sie durch unsere Arbeit nachhaltig zufrieden zu stellen. Wir glauben daran, dass nur zufriedene Kunden uns weiterempfehlen und somit zum Wachstum unseres Unternehmens beitragen.</p>
+                    
+                    <p>Lassen Sie uns gemeinsam die besten Lösungen für Ihre Bedürfnisse finden und eine erfolgreiche Partnerschaft beginnen.</p>
+                    
+                    <p>Danke, dass Sie uns Ihr Vertrauen schenken.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-12">Kontakt</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="contact-info-card p-6">
+                    <h3 class="text-xl font-bold mb-4 text-primary-dark">HKS Reinigung</h3>
+                    <p class="mb-3 flex items-center"><i class="fas fa-phone text-primary mr-3"></i> 0172 8471747</p>
+                    <p class="mb-3 flex items-center"><i class="fas fa-envelope text-primary mr-3"></i> berlin@hks-reinigung.de</p>
+                    <p class="mb-4 flex items-center"><i class="fas fa-map-marker-alt text-primary mr-3"></i> Berlin und Umgebung</p>
+                    <p class="flex items-center"><i class="fas fa-clock text-primary mr-3"></i> 24/7 Erreichbarkeit für unsere Kunden</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg contact-info-card">
+                    <h3 class="text-lg font-bold mb-4">Servicegebiete</h3>
+                    <p>Wir reinigen in ganz Berlin und Umgebung, insbesondere:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Mitte</li>
+                        <li>Prenzlauer Berg</li>
+                        <li>Friedrichshain</li>
+                        <li>Kreuzberg</li>
+                        <li>Charlottenburg</li>
+                        <li>Und allen weiteren Bezirken</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-300 text-sm py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center">
+                <button id="impressum-toggle" class="flex items-center mb-2 focus:outline-none">
+                    <span class="mr-1">Impressum</span>
+                    <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                    </svg>
+                </button>
+                <div id="impressum-content" class="hidden w-full bg-gray-200 p-4 rounded-lg mb-4 text-left">
+                    <h3 class="font-bold mb-2">Angaben gemäß § 5 TMG:</h3>
+                    <p>Harvey-Kevin Schulz</p>
+                    <p>Ederstraße 3</p>
+                    <p>12059 Berlin</p>
+                    
+                    <h3 class="font-bold mt-4 mb-2">Kontakt:</h3>
+                    <p>Telefon: 0172 8471747</p>
+                    <p>E-Mail: berlin@hks-reinigung.de</p>
+                    
+                    <h3 class="font-bold mt-4 mb-2">Umsatzsteuer:</h3>
+                    <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE246526733</p>
+                    <p>Steuernummer: 16/524/02567</p>
+                    
+                    <h3 class="font-bold mt-4 mb-2">Haftungsausschluss:</h3>
+                    <p><strong>Haftung für Inhalte:</strong> Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+                    <p><strong>Haftung für Links:</strong> Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+                    <p><strong>Urheberrecht:</strong> Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                    <p>Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet nor bereit.</p>
+                </div>
+                <p>&copy; 2025 HKS Reinigung. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/de.js"></script>
+    <script>
+        // Initialize date picker
+        flatpickr("#date", {
+            locale: "de",
+            minDate: "today",
+            dateFormat: "d.m.Y",
+        });
+
+        // Initialize time picker
+        flatpickr("#time", {
+            locale: "de",
+            noCalendar: true,
+            enableTime: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu md:hidden bg-white w-full absolute left-0 px-6 pb-4 shadow-md';
+        mobileMenu.innerHTML = `
+            <div class="flex flex-col space-y-4 pt-4">
+                <a href="#services" class="text-gray-700 hover:text-primary">Leistungen</a>
+                <a href="#about" class="text-gray-700 hover:text-primary">Über uns</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary">Kontakt</a>
+                <a href="#booking" class="bg-accent hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg text-center transition duration-300">Jetzt buchen</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Form submission handling
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = `
+                <span class="spinner"></span> Wird gesendet...
+            `;
+            
+            // Add slight delay to show spinner
+            setTimeout(() => {
+                form.submit();
+            }, 1000);
+        });
+
+        // Validate form before submission
+        form.addEventListener('submit', (e) => {
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    field.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'Angebot anfordern';
+                alert('Bitte füllen Sie alle erforderlichen Felder aus.');
+            }
+        });
+
+        // Remove error class when typing
+        form.querySelectorAll('[required]').forEach(field => {
+            field.addEventListener('input', () => {
+                if (field.value) {
+                    field.classList.remove('border-red-500');
+                }
+            });
+        });
+
+        // Impressum toggle functionality
+        const impressumToggle = document.getElementById('impressum-toggle');
+        const impressumContent = document.getElementById('impressum-content');
+        const arrow = impressumToggle.querySelector('svg');
+
+        impressumToggle.addEventListener('click', () => {
+            const isHidden = impressumContent.classList.contains('hidden');
+            
+            // Toggle content visibility
+            impressumContent.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+            
+            // Smooth scroll to show more content if expanding
+            if (isHidden) {
+                impressumContent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    </script>
+</body>
+</html>
